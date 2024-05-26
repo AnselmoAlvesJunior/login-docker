@@ -10,4 +10,3 @@ FROM amazoncorretto:17
 WORKDIR /app
 COPY --from=build /app/target/*.jar application.jar
 ENTRYPOINT ["java", "-jar", "application.jar"]
-
